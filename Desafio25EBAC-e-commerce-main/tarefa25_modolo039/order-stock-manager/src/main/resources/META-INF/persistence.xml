@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="main-pu" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Entidades mapeadas -->
+        <class>org.anasantana.model.Category</class>
+        <class>org.anasantana.model.Order</class>
+        <class>org.anasantana.model.OrderItem</class>
+        <class>org.anasantana.model.OrderItemPK</class>
+        <class>org.anasantana.model.Product</class>
+        <class>org.anasantana.model.ProductRestocking</class>
+        <class>org.anasantana.model.Stock</class>
+        <class>org.anasantana.model.User</class>
+
+        <!-- Conexão com PostgreSQL -->
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/main_db"/>
+            <property name="jakarta.persistence.jdbc.user" value="ana"/>
+            <property name="jakarta.persistence.jdbc.password" value="206430"/>
+
+            <!-- Manter dados -->
+            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+
+            <!-- Mostrar SQL no console -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+            <!-- Dialeto recomendado -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
