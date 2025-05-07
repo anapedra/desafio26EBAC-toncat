@@ -21,11 +21,12 @@ Este projeto foi desenvolvido como parte dos desafios da EBAC. Trata-se de uma a
 
 ### Tela de Cadastro
 
-![Tela de Cadastro](https://drive.google.com/uc?export=view&id=14Aegykhqhs-jUi-SjceJYYwLSizlZDLm)
+![Tela de Cadastro](https://drive.google.com/uc?export=view&id=1OIf_8XC-uf_wF8V4NfnkJZx21oSdr5gx)
 
 ### Lista de Clientes
 
-![Lista de Clientes](https://drive.google.com/uc?export=view&id=1OIf_8XC-uf_wF8V4NfnkJZx21oSdr5gx)
+![Lista de Clientes](
+https://drive.google.com/uc?export=view&id=14Aegykhqhs-jUi-SjceJYYwLSizlZDLm)
 
 ## ▶️ Como Executar
 
@@ -33,3 +34,4 @@ Este projeto foi desenvolvido como parte dos desafios da EBAC. Trata-se de uma a
 
 ```bash
 git clone https://github.com/anapedra/desafio26EBAC-toncat.git
+
